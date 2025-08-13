@@ -1,6 +1,7 @@
 #include <stdio.h>
-//NIVEL AVENTUREIRO
+// NIVEL AVENTUREIRO
 int main() {
+    // Variáveis
     char estado1, estado2;
     char codigo1[4], codigo2[4];
     char cidade1[50], cidade2[50];
@@ -9,6 +10,7 @@ int main() {
     int pontost1, pontost2;
     double densidade1, densidade2, pib_capital1, pib_capital2;
 
+    // Cadastro da Carta 1
     printf("Cadastro da Carta 1\n");
     printf("Estado: ");
     scanf(" %c", &estado1);
@@ -28,6 +30,7 @@ int main() {
     densidade1 = (double)populacao1 / area1;
     pib_capital1 = pib1 / (double)populacao1;
 
+    // Cadastro da Carta 2
     printf("\nCadastro da Carta 2\n");
     printf("Estado: ");
     scanf(" %c", &estado2);
@@ -47,6 +50,7 @@ int main() {
     densidade2 = (double)populacao2 / area2;
     pib_capital2 = pib2 / (double)populacao2;
 
+    // Menu de comparação
     int opcao;
     printf("\nEscolha o atributo para comparar:\n");
     printf("1 - População\n");
@@ -60,8 +64,9 @@ int main() {
 
     printf("\nComparando %s e %s\n", cidade1, cidade2);
 
-     switch (opcao) {
-     case 1:
+    // Comparação
+    switch (opcao) {
+        case 1:
             printf("População:\n");
             printf("%s: %lu\n", cidade1, populacao1);
             printf("%s: %lu\n", cidade2, populacao2);
