@@ -1,5 +1,6 @@
 {
     "files.associations": {
-        "NIVELNOVATO.C": "cpp"
+        "NIVELNOVATO.C": "cpp",
+        "NIVELAVENTUREIRO.C": "cpp"
     }
 }
